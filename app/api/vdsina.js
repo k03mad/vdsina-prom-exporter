@@ -46,11 +46,11 @@ class VDSina {
     }
 
     getServerId(id) {
-        return this._get(`server/${id}`);
+        return this._getCache(`server/${id}`);
     }
 
     getServerStatId(id) {
-        return this._get(`server.stat/${id}`);
+        return this._getCache(`server.stat/${id}`);
     }
 
 }

@@ -15,7 +15,7 @@ export default {
             const {bandwidth, data} = await VDSina.getServerId(server.id);
 
             ctx.labels('current', server.name).set(bandwidth.current_month);
-            ctx.labels('max', server.name).set(data.traff.bytes);
+            ctx.labels('limit', server.name).set(data.traff.bytes);
         }));
     },
 };
