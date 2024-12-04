@@ -32,7 +32,7 @@ class VDSina {
             headers: {
                 authorization: env.vdsina.token,
             },
-        }, {expire: 3600});
+        }, {expire: 1800});
 
         return body.data;
     }
