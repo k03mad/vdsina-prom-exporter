@@ -1,4 +1,4 @@
-import {request, requestCache} from '@k03mad/request';
+import {requestCache} from '@k03mad/request';
 
 import env from '../../env.js';
 
@@ -11,14 +11,16 @@ class VDSina {
 
     /**
      * @param {string} path
+     * @param {object} opts
+     * @param {number} opts.expire
      * @returns {Promise<object>}
      */
-    async _get(path) {
-        const {body} = await request(this.url + path, {
+    async _getCache(path, {expire = 3600} = {}) {
+        const {body} = await requestCache(this.url + path, {
             headers: {
                 authorization: env.vdsina.token,
             },
-        });
+        }, {expire});
 
         return body.data;
     }
@@ -27,14 +29,8 @@ class VDSina {
      * @param {string} path
      * @returns {Promise<object>}
      */
-    async _getCache(path) {
-        const {body} = await requestCache(this.url + path, {
-            headers: {
-                authorization: env.vdsina.token,
-            },
-        }, {expire: 1800});
-
-        return body.data;
+    _get(path) {
+        return this._getCache(path, {expire: 60});
     }
 
     getAccountBalance() {
@@ -46,11 +42,11 @@ class VDSina {
     }
 
     getServerId(id) {
-        return this._getCache(`server/${id}`);
+        return this._get(`server/${id}`);
     }
 
     getServerStatId(id) {
-        return this._getCache(`server.stat/${id}`);
+        return this._get(`server.stat/${id}`);
     }
 
 }
