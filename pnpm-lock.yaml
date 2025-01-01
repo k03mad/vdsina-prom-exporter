@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@k03mad/request':
-        specifier: 7.6.1
-        version: 7.6.1
+        specifier: 7.6.2
+        version: 7.6.2
       '@k03mad/simple-log':
         specifier: 5.1.1
         version: 5.1.1
@@ -114,8 +114,8 @@ packages:
     resolution: {integrity: sha512-VUuDhRJMHx+K28T+Dbxn5detH15C5ns6247JpfJJUPNixDpxxGtwUsvs9FdJqtY6m2l1RttQkVKO83pKEYjSbA==}
     engines: {node: '>=22'}
 
-  '@k03mad/request@7.6.1':
-    resolution: {integrity: sha512-5ZucC2f0asUSENEPD50aamLxoZaqncPAS28DMVWOYn9/PNXObX4k3jlOi0pmxNuZ95z6H+3LvsUJvdO/RdcPaQ==}
+  '@k03mad/request@7.6.2':
+    resolution: {integrity: sha512-YcfIhilSbK1N0rXs53cozeKPk8mIfBBK2arYs+fZPIE0ZQDp1y2mQgzZqJMCNypq+ZEYtRjMjP0rlm6oyhf1zQ==}
     engines: {node: '>=22'}
 
   '@k03mad/simple-date@4.1.0':
@@ -352,6 +352,10 @@ packages:
 
   chalk@5.3.0:
     resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+
+  chalk@5.4.1:
+    resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
 
   chokidar@3.6.0:
@@ -1429,7 +1433,7 @@ snapshots:
   '@eslint/config-array@0.19.0':
     dependencies:
       '@eslint/object-schema': 2.1.4
-      debug: 4.3.7(supports-color@5.5.0)
+      debug: 4.4.0
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -1439,7 +1443,7 @@ snapshots:
   '@eslint/eslintrc@3.2.0':
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.7(supports-color@5.5.0)
+      debug: 4.4.0
       espree: 10.3.0
       globals: 14.0.0
       ignore: 5.3.2
@@ -1491,9 +1495,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@k03mad/request@7.6.1':
+  '@k03mad/request@7.6.2':
     dependencies:
-      chalk: 5.3.0
+      chalk: 5.4.1
       debug: 4.4.0
       got: 14.4.5
       p-queue: 8.0.1
@@ -1587,7 +1591,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.17.0
       '@typescript-eslint/visitor-keys': 8.17.0
-      debug: 4.3.7(supports-color@5.5.0)
+      debug: 4.4.0
       fast-glob: 3.3.2
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -1602,7 +1606,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.18.0
       '@typescript-eslint/visitor-keys': 8.18.0
-      debug: 4.3.7(supports-color@5.5.0)
+      debug: 4.4.0
       fast-glob: 3.3.2
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -1771,6 +1775,8 @@ snapshots:
       supports-color: 7.2.0
 
   chalk@5.3.0: {}
+
+  chalk@5.4.1: {}
 
   chokidar@3.6.0:
     dependencies:
@@ -1943,7 +1949,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/scope-manager': 8.17.0
       '@typescript-eslint/utils': 8.17.0(eslint@9.17.0)(typescript@5.5.4)
-      debug: 4.3.7(supports-color@5.5.0)
+      debug: 4.4.0
       doctrine: 3.0.0
       eslint: 9.17.0
       eslint-import-resolver-node: 0.3.9
@@ -1962,7 +1968,7 @@ snapshots:
       '@es-joy/jsdoccomment': 0.49.0
       are-docs-informative: 0.0.2
       comment-parser: 1.4.1
-      debug: 4.3.7(supports-color@5.5.0)
+      debug: 4.4.0
       escape-string-regexp: 4.0.0
       eslint: 9.17.0
       espree: 10.3.0
