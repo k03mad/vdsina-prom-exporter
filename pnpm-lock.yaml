@@ -15,8 +15,8 @@ importers:
         specifier: 5.1.1
         version: 5.1.1
       '@k03mad/simple-prom':
-        specifier: 4.2.2
-        version: 4.2.2
+        specifier: 4.3.0
+        version: 4.3.0
       chalk:
         specifier: 5.3.0
         version: 5.3.0
@@ -122,16 +122,20 @@ packages:
     resolution: {integrity: sha512-asGjWfxYwSNawN6j+jtBu/8ah+Gj+PlJC5U1rPM+QSPFzrs56tZzi6GaggtjbNfwNPC+hcmBqRSynKxkYFNetw==}
     engines: {node: '>=22'}
 
-  '@k03mad/simple-log@5.1.0':
-    resolution: {integrity: sha512-O/RTIL2W4mS5ubloZ4Ds+4DpB/oWqqaxHjCTEqwEF8/q4Zukey6ppnYzUkDPLSoM2jDMuJX0OFVAfvYCdShJFg==}
+  '@k03mad/simple-date@4.2.0':
+    resolution: {integrity: sha512-y4mdQVErFRlQ/0knqAaCx1e9wFf53tNlL8ONDIgJdGCvzpCmdgtnHvvE1iK9d/AtFSsaN3RaEeNSsw8vfL8AbA==}
     engines: {node: '>=22'}
 
   '@k03mad/simple-log@5.1.1':
     resolution: {integrity: sha512-IizLdwtxuDCl1sva53aMZojxJIDfpcydOCPz3LbTVSB1d+JFIf4pJYUbiBVzpxKwm7lTSv6/22NjNEf0rtysjg==}
     engines: {node: '>=22'}
 
-  '@k03mad/simple-prom@4.2.2':
-    resolution: {integrity: sha512-Sbb3MOB8DuDMQmTDUZyKYskxvC2mKemnFNLVFBImAtaTfZg26KOhfOagDt8hvWKMi+izdHkhNqBKtrokjvEe0w==}
+  '@k03mad/simple-log@5.2.0':
+    resolution: {integrity: sha512-so5ms0KIMf1Q5GmyXQ+icYwT4sESR85rrHtYh80pSKRuA8mBXhHUS0HEidxOPYWsYi2ovbg4kZ7sZXSMFS72lA==}
+    engines: {node: '>=22'}
+
+  '@k03mad/simple-prom@4.3.0':
+    resolution: {integrity: sha512-tiQyiTe0HAXilpny2tLW4s8WVLybFR8AtWckkKXQ5F5OKpLTgqGDm0H+Ue3D8u+VN2T/H1OHcPZrqVMg1JtFTQ==}
     engines: {node: '>=22'}
 
   '@nodelib/fs.scandir@2.1.5':
@@ -352,6 +356,10 @@ packages:
 
   chalk@5.3.0:
     resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+
+  chalk@5.4.1:
+    resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
 
   chokidar@3.6.0:
@@ -1504,19 +1512,21 @@ snapshots:
 
   '@k03mad/simple-date@4.1.0': {}
 
-  '@k03mad/simple-log@5.1.0':
-    dependencies:
-      '@k03mad/simple-date': 4.1.0
+  '@k03mad/simple-date@4.2.0': {}
 
   '@k03mad/simple-log@5.1.1':
     dependencies:
       '@k03mad/simple-date': 4.1.0
 
-  '@k03mad/simple-prom@4.2.2':
+  '@k03mad/simple-log@5.2.0':
     dependencies:
-      '@k03mad/simple-date': 4.1.0
-      '@k03mad/simple-log': 5.1.0
-      chalk: 5.3.0
+      '@k03mad/simple-date': 4.2.0
+
+  '@k03mad/simple-prom@4.3.0':
+    dependencies:
+      '@k03mad/simple-date': 4.2.0
+      '@k03mad/simple-log': 5.2.0
+      chalk: 5.4.1
       compression: 1.7.5
       express: 4.21.2
       helmet: 8.0.0
@@ -1587,7 +1597,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.17.0
       '@typescript-eslint/visitor-keys': 8.17.0
-      debug: 4.3.7(supports-color@5.5.0)
+      debug: 4.4.0
       fast-glob: 3.3.2
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -1602,7 +1612,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.18.0
       '@typescript-eslint/visitor-keys': 8.18.0
-      debug: 4.3.7(supports-color@5.5.0)
+      debug: 4.4.0
       fast-glob: 3.3.2
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -1771,6 +1781,8 @@ snapshots:
       supports-color: 7.2.0
 
   chalk@5.3.0: {}
+
+  chalk@5.4.1: {}
 
   chokidar@3.6.0:
     dependencies:
