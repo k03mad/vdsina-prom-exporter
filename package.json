@@ -16,7 +16,7 @@
     "node": ">=22"
   },
   "dependencies": {
-    "@k03mad/request": "7.7.0",
+    "@k03mad/request": "7.7.1",
     "@k03mad/simple-log": "5.2.1",
     "@k03mad/simple-prom": "4.3.1",
     "chalk": "5.4.1"

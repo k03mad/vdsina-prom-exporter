@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@k03mad/request':
-        specifier: 7.7.0
-        version: 7.7.0
+        specifier: 7.7.1
+        version: 7.7.1
       '@k03mad/simple-log':
         specifier: 5.2.1
         version: 5.2.1
@@ -110,8 +110,8 @@ packages:
     resolution: {integrity: sha512-aODT0B/ZcGESWq/Aa7YJ96CPjrdc+np7sv9fP+L8BXXe5cUV8l4uvGgwnQmxQ4lQpsxcIPHMSqHIJw8R3jkuuw==}
     engines: {node: '>=22'}
 
-  '@k03mad/request@7.7.0':
-    resolution: {integrity: sha512-li60dQR3T9mQEZpEXqqHdvtDtLhrypYhL2WFtH7c5hAMc5Um6/rn1fKD2asjGipu9PN/oOw5xmAeepoVhP2HAA==}
+  '@k03mad/request@7.7.1':
+    resolution: {integrity: sha512-Lo3v+dWWmpNxEy21dqvppv/OgA8RgRAGyVsFyeEppFe6mbvnyXGeHtpfmG48lHnDU22uarRHeUuyJWxOxSN9iA==}
     engines: {node: '>=22'}
 
   '@k03mad/simple-date@4.2.1':
@@ -220,8 +220,8 @@ packages:
   ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
 
-  ansi-regex@6.0.1:
-    resolution: {integrity: sha512-n5M855fKb2SsfMIiFFoVrABHJC8QtHwVx+mHWP3QcEqBHYienj5dHSgjbxtC0WEZXYt4wcD6zrQElDPhFuZgfA==}
+  ansi-regex@6.1.0:
+    resolution: {integrity: sha512-7HSX4QQb4CspciLpVFwyRe79O3xsIZDDLER21kERQ71oaPodF8jL725AgJMFAYbooIqolJoRLuM81SpeUkpkvA==}
     engines: {node: '>=12'}
 
   ansi-styles@4.3.0:
@@ -1000,8 +1000,8 @@ packages:
     resolution: {integrity: sha512-mxLDbbGIBEXTJL0zEx8JIylaj3xQ7Z/7eEVjcF9fJX4DBiH9oqe+oahYnlKKxm0Ci9TlWTyhSHgygxMxjIB2jw==}
     engines: {node: '>=18'}
 
-  p-timeout@6.1.2:
-    resolution: {integrity: sha512-UbD77BuZ9Bc9aABo74gfXhNvzC9Tx7SxtHSh1fxvx3jTLLYvmVhiQZZrJzqqU0jKbN32kb5VOKiLEQI/3bIjgQ==}
+  p-timeout@6.1.4:
+    resolution: {integrity: sha512-MyIV3ZA/PmyBN/ud8vV9XzwTrNtR4jFrObymZYnZqMmW0zA8Z17vnT0rBgFE/TlohB+YCHqXMgZzb3Csp49vqg==}
     engines: {node: '>=14.16'}
 
   p-try@2.2.0:
@@ -1300,8 +1300,8 @@ packages:
     resolution: {integrity: sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==}
     engines: {node: '>=8'}
 
-  type-fest@4.30.0:
-    resolution: {integrity: sha512-G6zXWS1dLj6eagy6sVhOMQiLtJdxQBHIA9Z6HFUNLOlr6MFOgzV8wvmidtPONfPtEUv0uZsy77XJNzTAfwPDaA==}
+  type-fest@4.33.0:
+    resolution: {integrity: sha512-s6zVrxuyKbbAsSAD5ZPTB77q4YIdRctkTbJ2/Dqlinwz+8ooH2gd+YA7VA6Pa93KML9GockVvoxjZ2vHP+mu8g==}
     engines: {node: '>=16'}
 
   type-is@1.6.18:
@@ -1444,7 +1444,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@k03mad/request@7.7.0':
+  '@k03mad/request@7.7.1':
     dependencies:
       chalk: 5.4.1
       debug: 4.4.0
@@ -1575,7 +1575,7 @@ snapshots:
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
 
-  ansi-regex@6.0.1: {}
+  ansi-regex@6.1.0: {}
 
   ansi-styles@4.3.0:
     dependencies:
@@ -2147,7 +2147,7 @@ snapshots:
       lowercase-keys: 3.0.0
       p-cancelable: 4.0.1
       responselike: 3.0.0
-      type-fest: 4.30.0
+      type-fest: 4.33.0
 
   graceful-fs@4.2.11: {}
 
@@ -2405,9 +2405,9 @@ snapshots:
   p-queue@8.1.0:
     dependencies:
       eventemitter3: 5.0.1
-      p-timeout: 6.1.2
+      p-timeout: 6.1.4
 
-  p-timeout@6.1.2: {}
+  p-timeout@6.1.4: {}
 
   p-try@2.2.0: {}
 
@@ -2634,7 +2634,7 @@ snapshots:
 
   strip-ansi@7.1.0:
     dependencies:
-      ansi-regex: 6.0.1
+      ansi-regex: 6.1.0
 
   strip-indent@3.0.0:
     dependencies:
@@ -2685,7 +2685,7 @@ snapshots:
 
   type-fest@0.8.1: {}
 
-  type-fest@4.30.0: {}
+  type-fest@4.33.0: {}
 
   type-is@1.6.18:
     dependencies:
