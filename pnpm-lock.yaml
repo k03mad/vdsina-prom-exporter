@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@k03mad/request':
-        specifier: 7.16.0
-        version: 7.16.0
+        specifier: 7.17.0
+        version: 7.17.0
       '@k03mad/simple-log':
         specifier: 5.3.0
         version: 5.3.0
@@ -131,8 +131,8 @@ packages:
     resolution: {integrity: sha512-1TVevYsQ/9t3cuyytBSzFmCIMIYUkN608+L8QfOj/Yk4QI0Ht+MtE9R43PBvzSd6nDLR/zq+HOS9g4Ly6Nuxpg==}
     engines: {node: '>=22'}
 
-  '@k03mad/request@7.16.0':
-    resolution: {integrity: sha512-SAuuYwaDvcxCiVsJoMW+fsj4u/cODkhnowr86jg/hUS8DbNA1i0doU9dNf3G/snHxiMG1kwxirYucETGqQ7Now==}
+  '@k03mad/request@7.17.0':
+    resolution: {integrity: sha512-U9TYUwpS9bU5L9kOypk9WG6la7Y02RsdiaN8hUThKBDwKI4UhlpLWtSTWxPx+to3pPbfhwaaPHKIWxJKcN49Lw==}
     engines: {node: '>=22'}
 
   '@k03mad/simple-date@4.3.0':
@@ -1527,7 +1527,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@k03mad/request@7.16.0':
+  '@k03mad/request@7.17.0':
     dependencies:
       chalk: 5.4.1
       debug: 4.4.1(supports-color@5.5.0)
