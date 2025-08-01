@@ -15,8 +15,8 @@ importers:
         specifier: 5.3.0
         version: 5.3.0
       '@k03mad/simple-prom':
-        specifier: 5.6.0
-        version: 5.6.0
+        specifier: 5.7.0
+        version: 5.7.0
       chalk:
         specifier: 5.4.1
         version: 5.4.1
@@ -135,20 +135,20 @@ packages:
     resolution: {integrity: sha512-SAuuYwaDvcxCiVsJoMW+fsj4u/cODkhnowr86jg/hUS8DbNA1i0doU9dNf3G/snHxiMG1kwxirYucETGqQ7Now==}
     engines: {node: '>=22'}
 
-  '@k03mad/simple-date@4.3.0':
-    resolution: {integrity: sha512-81Md+wcxEgMLNMljyoatEBf4iEfvqyNM3Zoc6WiS/5fJTn/PHyVBtvGzfOZMXldNIQHLbVl/IOaVwttoNLx6FA==}
+  '@k03mad/simple-date@4.10.0':
+    resolution: {integrity: sha512-PITMIVQJeixV4MQ9xlnhNBYYskRiM+Pcedn3e95YRMsJetSIhGYV1ePWmCSrJFLsCruhYi8iVUBpn721WcX21g==}
     engines: {node: '>=22'}
 
-  '@k03mad/simple-date@4.9.0':
-    resolution: {integrity: sha512-xc+HCQ9p0oKNojG+4m+uEdMpK4p0KS5Ygwh+WYlGhDkNSriycpFIyIHkHB7naewpbEtdYNFjgov5OUXIHKuOYg==}
+  '@k03mad/simple-date@4.3.0':
+    resolution: {integrity: sha512-81Md+wcxEgMLNMljyoatEBf4iEfvqyNM3Zoc6WiS/5fJTn/PHyVBtvGzfOZMXldNIQHLbVl/IOaVwttoNLx6FA==}
     engines: {node: '>=22'}
 
   '@k03mad/simple-log@5.3.0':
     resolution: {integrity: sha512-9rg+aIiqkKP3gBDaU+9Ojhs6mlnKbJJV4eaQLG1hNXDXb/X38x2rfsnESE7TO1h7WwKarMAQVipj4FXUNNQaxA==}
     engines: {node: '>=22'}
 
-  '@k03mad/simple-prom@5.6.0':
-    resolution: {integrity: sha512-pJtOzUY0jM4d4LRlK12f4aC0KGN/etSCA+4QkF0n/pumQonWoBco/lSrNDMA6APN1eHrRDJ7L+xeg8Gyp+tKSQ==}
+  '@k03mad/simple-prom@5.7.0':
+    resolution: {integrity: sha512-62ygaha7IXxb3UDvq+BT9hsf0+EQKz0fmk6sxjOL7i/RqwxG5JDjo+aFrs7blRA9lbZyDbBb2ufQdYGqEF96iw==}
     engines: {node: '>=22'}
 
   '@napi-rs/wasm-runtime@0.2.12':
@@ -1538,17 +1538,17 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@k03mad/simple-date@4.3.0': {}
+  '@k03mad/simple-date@4.10.0': {}
 
-  '@k03mad/simple-date@4.9.0': {}
+  '@k03mad/simple-date@4.3.0': {}
 
   '@k03mad/simple-log@5.3.0':
     dependencies:
       '@k03mad/simple-date': 4.3.0
 
-  '@k03mad/simple-prom@5.6.0':
+  '@k03mad/simple-prom@5.7.0':
     dependencies:
-      '@k03mad/simple-date': 4.9.0
+      '@k03mad/simple-date': 4.10.0
       '@k03mad/simple-log': 5.3.0
       chalk: 5.4.1
       compression: 1.8.1
