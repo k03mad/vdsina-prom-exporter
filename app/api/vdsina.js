@@ -5,9 +5,7 @@ import env from '../../env.js';
 /** */
 class VDSina {
 
-    constructor() {
-        this.url = 'https://userapi.vdsina.ru/v1/';
-    }
+    url = 'https://userapi.vdsina.ru/v1/';
 
     /**
      * @param {string} path
