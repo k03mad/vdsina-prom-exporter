@@ -6,7 +6,7 @@
 
 ```bash
 # one time
-npm run setup
+npm i
 
 # start app
 npm run start --token=1234321 --port=11000 --turnoff=vdsina_balance
