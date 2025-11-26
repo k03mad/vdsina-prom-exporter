@@ -1,5 +1,3 @@
-import {logErrorExit} from '@k03mad/simple-log';
-
 import {codeText, errorText} from './app/helpers/colors.js';
 
 const TOKEN_ENV_NAME = 'VDSINA_API_TOKEN';
@@ -23,12 +21,14 @@ const env = {
 };
 
 if (!env.vdsina.token) {
-    logErrorExit([
+    console.error([
         errorText(' VDSina API token is not specified '),
         `> use env variable: ${codeText(TOKEN_ENV_NAME)}`,
         `> or npm parameter: ${codeText(`--${TOKEN_NPM_PARAM_NAME}`)}`,
         '> see readme',
-    ]);
+    ].join('\n'));
+
+    process.exit(1);
 }
 
 export default env;
