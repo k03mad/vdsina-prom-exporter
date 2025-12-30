@@ -7,7 +7,7 @@ on:
 
 jobs:
   ssh-vds:
-    environment: vds
+    environment: opi
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.ref }}
