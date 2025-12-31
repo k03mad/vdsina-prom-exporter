@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  ssh-vds:
+  ssh-opi:
     environment: opi
     runs-on: ubuntu-latest
     concurrency:
