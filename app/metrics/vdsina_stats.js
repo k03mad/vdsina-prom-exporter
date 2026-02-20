@@ -11,13 +11,15 @@ export default {
 
         const servers = await VDSina.getServers();
 
-        await Promise.all(servers.map(async server => {
-            const data = await VDSina.getServerStatId(server.id);
-            const {stat} = data.at(-1);
+        await Promise.all(
+            servers.map(async server => {
+                const data = await VDSina.getServerStatId(server.id);
+                const {stat} = data.at(-1);
 
-            Object.entries(stat).forEach(([key, value]) => {
-                ctx.labels(key, server.name).set(Number(value.toFixed(2)));
-            });
-        }));
+                Object.entries(stat).forEach(([key, value]) => {
+                    ctx.labels(key, server.name).set(Number(value.toFixed(2)));
+                });
+            }),
+        );
     },
 };

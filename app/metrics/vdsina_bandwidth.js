@@ -11,11 +11,13 @@ export default {
 
         const servers = await VDSina.getServers();
 
-        await Promise.all(servers.map(async server => {
-            const {bandwidth, data} = await VDSina.getServerId(server.id);
+        await Promise.all(
+            servers.map(async server => {
+                const {bandwidth, data} = await VDSina.getServerId(server.id);
 
-            ctx.labels('current', server.name).set(bandwidth.current_month);
-            ctx.labels('limit', server.name).set(data.traff.bytes);
-        }));
+                ctx.labels('current', server.name).set(bandwidth.current_month);
+                ctx.labels('limit', server.name).set(data.traff.bytes);
+            }),
+        );
     },
 };

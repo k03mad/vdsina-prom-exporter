@@ -4,7 +4,6 @@ import env from '../../env.js';
 
 /** */
 class VDSina {
-
     url = 'https://userapi.vdsina.ru/v1/';
 
     /**
@@ -14,11 +13,15 @@ class VDSina {
      * @returns {Promise<object>}
      */
     async _getCache(path, {expire = 900} = {}) {
-        const {body} = await requestCache(this.url + path, {
-            headers: {
-                authorization: env.vdsina.token,
+        const {body} = await requestCache(
+            this.url + path,
+            {
+                headers: {
+                    authorization: env.vdsina.token,
+                },
             },
-        }, {expire});
+            {expire},
+        );
 
         return body.data;
     }
@@ -38,7 +41,6 @@ class VDSina {
     getServerStatId(id) {
         return this._getCache(`server.stat/${id}`);
     }
-
 }
 
 export default new VDSina();
