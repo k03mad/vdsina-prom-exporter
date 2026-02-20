@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@k03mad/request':
-        specifier: 13.0.0
-        version: 13.0.0
+        specifier: 14.0.1
+        version: 14.0.1
       '@k03mad/simple-prom':
         specifier: 10.1.0
         version: 10.1.0
@@ -40,8 +40,8 @@ packages:
     resolution: {integrity: sha512-ANzydjYLmdFzA36ZiVZ0vaiLhCvAD9mvOnEVQCaIEigZVJm1XbHZqRBxcM9dG7lpcYnj18jfNzZHvTW8TkTFkQ==}
     engines: {node: '>=24'}
 
-  '@k03mad/request@13.0.0':
-    resolution: {integrity: sha512-5iQ/HbJiYeJGDx4P7rem24KibIR/689g5/e42Tn9RB7NexzxKkYktw9EOZ4cFhVJOLAi64dG9VN7mGDq+wZTkQ==}
+  '@k03mad/request@14.0.1':
+    resolution: {integrity: sha512-gEOHRLqHtoS0rZYkmO153/PXBTKGXXbliQGmvmP0YhYFY48XpMFNFC0jy0yS07Gnq/hotcfAeBIgCCkoV5VsTQ==}
     engines: {node: '>=24'}
 
   '@k03mad/simple-prom@10.1.0':
@@ -842,7 +842,7 @@ snapshots:
 
   '@k03mad/oxlint-config@0.0.19': {}
 
-  '@k03mad/request@13.0.0':
+  '@k03mad/request@14.0.1':
     dependencies:
       chalk: 5.6.2
       debug: 4.4.3(supports-color@5.5.0)
