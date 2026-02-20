@@ -12,8 +12,8 @@ importers:
         specifier: 13.0.0
         version: 13.0.0
       '@k03mad/simple-prom':
-        specifier: 10.1.0
-        version: 10.1.0
+        specifier: 11.0.1
+        version: 11.0.1
       chalk:
         specifier: 5.6.2
         version: 5.6.2
@@ -44,8 +44,8 @@ packages:
     resolution: {integrity: sha512-5iQ/HbJiYeJGDx4P7rem24KibIR/689g5/e42Tn9RB7NexzxKkYktw9EOZ4cFhVJOLAi64dG9VN7mGDq+wZTkQ==}
     engines: {node: '>=24'}
 
-  '@k03mad/simple-prom@10.1.0':
-    resolution: {integrity: sha512-3tqVGvTyDWqJutlmVicZAg7VtQh96LWvwCdKb3h0S9zsNCYbY75NjN5tCvhhHY1oL0Pr6mfqyKNh7F0z7UV6UQ==}
+  '@k03mad/simple-prom@11.0.1':
+    resolution: {integrity: sha512-BhJY0pK6nz2KnV544EScd2fwup+pXO+5HMaLn3ppPThGDRNZMNlHf9FCLaNkI/zyTr/LMwlLLqiRkN5Z7cSEMQ==}
     engines: {node: '>=24'}
 
   '@keyv/serialize@1.1.1':
@@ -709,8 +709,8 @@ packages:
   pstree.remy@1.1.8:
     resolution: {integrity: sha512-77DZwxQmxKnu3aR542U+X8FypNzbfJ+C5XQDk3uWjWxn6151aIMGthWYRXTqT1E5oJvg+ljaa2OJi+VfvCOQ8w==}
 
-  qs@6.14.1:
-    resolution: {integrity: sha512-4EK3+xJl8Ts67nLYNwqw/dsFVnCf+qR7RgXSK9jEEm9unao3njwMDdmsdvoKBKHzxd7tCYz5e5M+SnMjdtXGQQ==}
+  qs@6.15.0:
+    resolution: {integrity: sha512-mAZTtNCeetKMH+pSjrb76NAM8V9a05I9aBZOHztWy/UqcJdQYNsf59vrRKWnojAT9Y+GbIvoTBC++CPHqpDBhQ==}
     engines: {node: '>=0.6'}
 
   quick-lru@5.1.1:
@@ -853,7 +853,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@k03mad/simple-prom@10.1.0':
+  '@k03mad/simple-prom@11.0.1':
     dependencies:
       chalk: 5.6.2
       compression: 1.8.1
@@ -1018,7 +1018,7 @@ snapshots:
       http-errors: 2.0.1
       iconv-lite: 0.7.2
       on-finished: 2.4.1
-      qs: 6.14.1
+      qs: 6.15.0
       raw-body: 3.0.2
       type-is: 2.0.1
     transitivePeerDependencies:
@@ -1161,7 +1161,7 @@ snapshots:
       once: 1.4.0
       parseurl: 1.3.3
       proxy-addr: 2.0.7
-      qs: 6.14.1
+      qs: 6.15.0
       range-parser: 1.2.1
       router: 2.2.0
       send: 1.2.1
@@ -1445,7 +1445,7 @@ snapshots:
 
   pstree.remy@1.1.8: {}
 
-  qs@6.14.1:
+  qs@6.15.0:
     dependencies:
       side-channel: 1.1.0
 
