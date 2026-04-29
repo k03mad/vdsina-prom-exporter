@@ -2,7 +2,6 @@ import {requestCache} from '@k03mad/request';
 
 import env from '../../env.js';
 
-/** */
 class VDSina {
     url = 'https://userapi.vdsina.ru/v1/';
 
